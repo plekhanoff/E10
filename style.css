@@ -1,0 +1,143 @@
+
+
+.grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    grid-template-rows: auto;
+
+
+}
+
+.main{
+    padding: auto;
+    margin-block: 10px;
+    font-family: Arial, sans-serif;
+}
+
+* {box-sizing: border-box}
+
+
+
+.title_picture {
+    display: flex;
+    border-radius: 10px;
+    border-style: ridge;
+    padding: auto;
+    margin-block: 10px;
+}
+
+.title {
+    display: flex;
+    background-color: red;
+    border-radius: 20px;
+    border-style: ridge;
+    padding: auto;
+    margin-block: 10px;
+}
+
+.about {
+    display: flex;
+    border-radius: 10px;
+    border-style: ridge; 
+    padding: auto;
+    margin-block: 10px;
+    font-family: Arial, sans-serif;
+}
+.timeline
+{
+    width: 380px;
+    height: 600px;
+    margin: 10px auto 0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.timeline li
+{
+    position: relative;
+    list-style: none;
+}
+.timeline li .item
+{
+    position: relative;
+    min-height: 210px;
+    background: #fff;
+    padding: 10px 2px 2px 2px;
+    margin-left: 5px;
+    border-left: 10px solid #8f8d8d;
+}
+.timeline li:last-child .item
+{
+    border-left: 10px solid transparent;
+}
+.timeline li .item span
+{
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #cf6868;
+    color: #fff;
+    border-radius: 50%;
+}
+.timeline li:hover .item span
+{
+    background: rgb(186, 3, 33);
+}
+.text_about h3,
+.text_about p 
+{
+    margin: 10px;
+    padding: 10px;
+}
+
+.skills {
+  text-align: center;
+  display: flex;
+  background-color: whitesmoke;
+  border-radius: 5px;
+  border-style: ridge;
+  padding: auto;
+  margin-block: 10px;
+ 
+}
+
+.html {width: 100%; height: 30%; background-color: #04AA6D;}
+.css {width: 100%; height: 40%; background-color: #2196F3;}
+.js {width: 100%; height: 35%; background-color: #f44336;}
+.python {width: 100%; height: 50%; background-color: #808080;}
+
+
+.hobby {
+    display: flex;
+    background-color: green;
+    border-radius: 10px;
+    border-style: ridge;
+    padding: auto;
+    margin-block: 10px;
+}
+
+.collapsible {
+    background-color: green;
+    color: lightgreen;
+    cursor: pointer;
+    padding: 18px;
+    text-align: left;
+    outline: none;
+
+}
+.active,
+.collapsible:hover {
+    background-color: rgba(11, 177, 88, 0.506);
+}
+
+.content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: lightgreen;
+
+}

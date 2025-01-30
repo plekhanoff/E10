@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <div class="title">
+    <h1>Плеханов Александр. Разработчик</h1>
+    </div>
+</head>
+<main>
+<div class="grid-wrapper">
+    <div class="title_picture">
+        <img src="media/1F1B1C3A-EF23-4729-ACC7-00A34EE5C745_1_102_o.jpeg" alt="the picture of a strange man" width="300"> 
+    </div>
+    <div class="about">
+        <ul class="timeline">   
+            <li>
+                <div class="item">
+                    <span>2025</span>
+                    <div class="text_about">
+                        <h3>С небольшими трудностями,но..</h3>
+                        <p>Полёт нормальный</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="item">
+                    <span>2024</span>
+                    <div class="text_about">
+                        <h3>Продолжение обучения</h3>
+                        <p>Точка Junior</p>
+                    </div>
+
+                </div>
+            </li>
+            <li>
+                <div class="item">
+                    <span>2023</span>
+                    <div class="text_about">
+                        <h3> Принятие решения</h3>
+                        <p>Приступил к обучению в Skillfactory</p>
+                    </div>
+
+                </div>
+            </li>
+        </ul>
+        
+    </div>
+    
+    <div class="skills">
+        <p>HTML</p>
+        <div class="container">
+            <div class="skills html">30%</div>
+        </div>
+        
+        <p>CSS</p>
+        <div class="container">
+            <div class="skills css">40%</div>
+        </div>
+        
+        <p>JS</p>
+        <div class="container">
+            <div class="skills js">35%</div>
+        </div>
+        
+        <p>Python</p>
+        <div class="container">
+            <div class="skills python">50%</div>
+        </div>
+    </div>
+        <div class="hobby">
+            <button class="collapsible">Хобби</button>
+            <div class="content">
+                <p> Музыка, машины, рукоделие. И вообще окружащий мир. На самом деле увлечений масса, вот только китайский язык не стал изучать и арабский.</p>
+            </div>
+        
+            <script>
+            let coll = document.getElementsByClassName("collapsible");
+            for (let i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    let content = this.nextElementSibling;
+                    if (content.style.maxHeight) {
+                        content.style.maxHeight = null;
+                    } else {
+                        content.style.maxHeight = content.scrollHeight + "px"
+                    }
+                })
+            }
+            </script>
+        </div>
+    </div>
+</div>
+
+</main>
+
+<footer>
+    <h2>Контакты:</h2>
+    <p>Телефон: <a href="2323322">2323322</a></p>
+    <p>E-mail: <a href="example_mail@mail.com">example_mail@mail.com</a></p>
+
+</footer>
+</html>
